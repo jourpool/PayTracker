@@ -202,6 +202,9 @@ Implementing filter and pagination purpose:
 
 # Task #3: Handling Large Page Sizes
 # Task #4: Frontend Search Component
+
+<img src="https://i.imgur.com/fEQnDdt.jpg" alt="Screenshot" width="500" >
+
 This repository provides a React.js app as its frontend with these features:
 - **Real-time Results**. Search function provides real-time results as the user types.
 - **Error Handling**. Show no records error when no results are found.
@@ -211,5 +214,12 @@ This repository provides a React.js app as its frontend with these features:
 - **Optional filter**
     - _Amount_
 
+### Payment details
+
+<img src="https://i.imgur.com/ZLGSG7Y.jpg" alt="Screenshot" width="500" >
+
+### Payment not found
+
+<img src="https://i.imgur.com/Uaept9V.jpg" alt="Screenshot" width="500" >
 
 # Task #5: Addressing Slow Search Performance
