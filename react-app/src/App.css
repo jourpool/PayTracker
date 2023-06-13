@@ -1,0 +1,103 @@
+body {
+  min-height: 100vh;
+  background-color: #f0f3f7;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #04ac5c !important;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Form */
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button.btn-primary {
+  background-color: #00aa5b;
+  border-color: #00aa5b;
+}
+
+button.btn-primary:hover {
+  background-color: #008c4f;
+  border-color: #008c4f;
+}
+
+button.btn-primary:active {
+  background-color: #006e3d !important;
+  border-color: #006e3d !important;
+}
+
+/* Modal */
+.modal {
+  display: block;
+  opacity: 100;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.modal-dialog {
+  max-width: 500px;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-title {
+  margin-bottom: 15px;
+}
+
+.modal-body p {
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  justify-content: flex-end;
+}
+
+.modal-backdrop {
+  padding: 0;
+  margin: 0;
+}
+
+/* Table */
+table {
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table tr {
+  cursor: pointer;
+}
+
+table tbody tr:nth-child(odd) td {
+  background-color: #ecfef4;
+}
+
+table tbody tr:nth-child(odd) td:hover {
+  background-color: #f0f0f0;
+}
+
+.not-found {
+  text-align: center;
+  padding: 40px !important;
+}
