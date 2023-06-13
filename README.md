@@ -51,7 +51,7 @@
     "totalItems": 1,
     "payments": [
         {
-            "id": 102,
+            "id": 100,
             "amount": 3000.00,
             "paymentTypeId": 0,
             "date": "1970-01-01T00:02:03.456+00:00",
@@ -146,5 +146,40 @@ The delete function uses soft-deletion method.
     "date": "2023-06-13T08:35:18.787+00:00",
     "customerId": 1,
     "deletedTime": "2023-06-13T08:39:45.849+00:00"
+}
+```
+
+#### Get payments by filter
+
+```http
+  GET /api/payment/filter
+```
+
+| Parameter | Type     | Required     | Description                |
+| :-------- | :------- | :------- | :------------------------- |
+| `customerId` | `long` | Yes | Customer ID |
+| `typeName` | `string` | Yes | Payment Type Name |
+| `amount` | `long` | No | Payment Amount |
+| `page` | `int` | No | List Paging |
+| `size` | `int` | No | List Size. Max: 100 |
+
+
+##### Response
+
+``` http
+    {
+    "totalItems": 1,
+    "payments": [
+        {
+            "id": 100,
+            "amount": 3000.00,
+            "paymentTypeId": 0,
+            "date": "1970-01-01T00:02:03.456+00:00",
+            "customerId": 1,
+            "deletedTime": null
+        }
+    ],
+    "totalPages": 1,
+    "currentPage": 0
 }
 ```
