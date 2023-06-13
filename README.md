@@ -3,7 +3,7 @@
 
 Project Assignment for EP R&D
 
-##### Table of Contents  
+### Table of Contents  
 - [Task 1: CRUD](#task-1-crud)
   - [Get all payments](#get-all-payments)
   - [Get payment](#get-payment)
@@ -14,8 +14,14 @@ Project Assignment for EP R&D
   - [Get payments by filter](#get-payments-by-filter)
 - [Task 3: Handling Large Page Sizes](#task-3-handling-large-page-sizes)
 - [Task 4: Frontend Search Component](#task-4-frontend-search-component)
+    - [Payment Details](#payment-details)
+    - [Payment Not Found](#payment-not-found)
 - [Task 5: Addressing Slow Search Performance](#task-5-addressing-slow-search-performance)
+    - [Challenges](#challenges)
+    - [Optimization](#optimization)
 # Task #1: CRUD
+This repository provides a Spring Boot and PostgreSQL as its backend.
+
 ### API Endpoints
 
 #### Get all payments
@@ -210,6 +216,12 @@ Implementing filter and pagination purpose:
 ```
 
 # Task #3: Handling Large Page Sizes
+Strategy to handle the scenario where a page needs to load more than 100 rows in the pagination implementation for Payment records:
+- **Pagination and Size Limit**. Breaking down the results into smaller, manageable chunks to improve performance.
+- **Caching Mechanism**. Utilize caching mechanisms to store accessed data in memory, reducing repeated queries.
+- **Server Configuration**. Adjust server resources to maintain performance.
+
+
 # Task #4: Frontend Search Component
 
 <img src="https://i.imgur.com/fEQnDdt.jpg" alt="Screenshot" width="500" >
@@ -232,3 +244,15 @@ This repository provides a React.js app as its frontend with these features:
 <img src="https://i.imgur.com/Uaept9V.jpg" alt="Screenshot" width="500" >
 
 # Task #5: Addressing Slow Search Performance
+### Challenges
+- Large Dataset
+- Complex Queries
+- Network Latency
+### Optimization
+- **Lazy Loading**. Gradually loading data and reduces initial load. User can requests more details, and fetch more data on-demand to reduce initial data transfer.
+
+<img src="https://i.imgur.com/nR6skHL.gif" alt="Screenshot" width="500" >
+
+- **Search Indexing**: Elasticsearch. Pre-processing and organizing data in a structured format.
+
+![ElasticSearch](https://www.elastic.co/static-res/images/elastic-logo-200.png)
