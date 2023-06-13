@@ -1,5 +1,12 @@
 
-# Task #1
+# PayTacker
+
+Project Assignment for EP R&D
+
+
+
+
+# Task #1: CRUD
 ### API Endpoints
 
 #### Get all payments
@@ -149,6 +156,15 @@ The delete function uses soft-deletion method.
 }
 ```
 
+
+# Task #2: Filter and Pagination
+
+Implementing filter and pagination purpose:
+- User can retrieve specific filter that will reduce unnecessary data retrival.
+- Pagination limits number of records per page, reducing the response size and improves performance especially for large data.
+
+### API Endpoints
+
 #### Get payments by filter
 
 ```http
@@ -183,3 +199,17 @@ The delete function uses soft-deletion method.
     "currentPage": 0
 }
 ```
+
+# Task #3: Handling Large Page Sizes
+# Task #4: Frontend Search Component
+This repository provides a React.js app as its frontend with these features:
+- **Real-time Results**. Search function provides real-time results as the user types.
+- **Error Handling**. Show no records error when no results are found.
+- **Mandatory filters**
+    - _Customer ID_
+    - _Payment Type Name_
+- **Optional filter**
+    - _Amount_
+
+
+# Task #5: Addressing Slow Search Performance
