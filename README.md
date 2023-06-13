@@ -3,9 +3,18 @@
 
 Project Assignment for EP R&D
 
-
-
-
+##### Table of Contents  
+- [Task 1: CRUD](#task-1-crud)
+  - [Get all payments](#get-all-payments)
+  - [Get payment](#get-payment)
+  - [Create payment](#create-payment)
+  - [Update payment](#update-payment)
+  - [Delete payment](#delete-payment)
+- [Task 2: Filter and Pagination](#task-2-filter-and-pagination)
+  - [Get payments by filter](#get-payments-by-filter)
+- [Task 3: Handling Large Page Sizes](#task-3-handling-large-page-sizes)
+- [Task 4: Frontend Search Component](#task-4-frontend-search-component)
+- [Task 5: Addressing Slow Search Performance](#task-5-addressing-slow-search-performance)
 # Task #1: CRUD
 ### API Endpoints
 
